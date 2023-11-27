@@ -1,0 +1,207 @@
+<!-- <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashBoard</title>
+  </head>
+  <body>
+    <div>
+      <a href="/dashboard">Get Details</a>
+    </div>
+  </body>
+</html>
+-->
+<!-- <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Solitreo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Solitreo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Solitreo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nanum+Myeongjo&family=Solitreo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/SearchPage.css" />
+    <title>Wedding Spark - Search</title>
+  </head>
+  <body>
+    <div class="Top_portion">
+      <div class="Logo">
+        <a href="#Home">Wedding Spark</a>
+      </div>
+      <div class="Navbar">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Contact">Contact Us</a></li>
+          <li><a href="./About.html">About Us</a></li>
+          <li><a href="/dashboard">My Booking</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+
+    <% if(details!=null) { %>
+    <table>
+      <tr>
+        <th>first Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Date</th>
+      </tr>
+      <% details.forEach(function(item){ %>
+      <tr>
+        <td><%= item.fname%></td>
+        <td><%= item.lname %></td>
+        <td><%= item.email%></td>
+        <td><%= item.date%></td>
+      </tr>
+      <% }) %>
+    </table>
+    <% } %>
+  </body>
+  <script src="JS/myScript.js"></script>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DashBoard</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/Home.css" />
+  </head>
+  <body>
+    <div class="Top_portion">
+      <div class="Logo">
+        <a href="#Home">Wedding Spark</a>
+      </div>
+      <div class="Navbar">
+        <ul>
+          <li><a href="/Home">Home</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Contact">Contact Us</a></li>
+          <li><a href="./About.html">About Us</a></li>
+          <li><%= email %></li>
+        </ul>
+      </div>
+    </div>
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center mb-5">
+            <h2 class="heading-section">My Booking</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-wrap">
+              <% if(details!=null) { var i = 1; %>
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>S No.</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Date</th>
+                    <th>&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="alert" role="alert">
+                    <% details.forEach(function(item){ %>
+                    <th scope="row"><%= i%></th>
+                    <td><%= item.fname%></td>
+                    <td><%= item.lname %></td>
+                    <td><%= item.email %></td>
+                    <td><%= item.date %></td>
+                    <td>
+                      <a
+                        href="#"
+                        class="close"
+                        data-dismiss="alert"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true"
+                          ><i class="fa fa-close"></i
+                        ></span>
+                      </a>
+                    </td>
+                  </tr>
+                  <% i++}) %>
+                </tbody>
+              </table>
+              <% } %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      // Fetch the email from the server using AJAX
+      $(document).ready(function () {
+        $.get("/dashboard", function (data) {
+          const emailContainer = $("#email-container");
+          if (data.email) {
+            emailContainer.text("Email: " + data.email);
+          } else {
+            emailContainer.text("No email available.");
+          }
+        });
+      });
+    </script> -->
+  </body>
+</html>

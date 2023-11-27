@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Spark - Booking</title>
+    <link rel="stylesheet" href="css/Booking.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/94ceb7c30d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <form action="/Booking" method="POST">
+      <div class="Float_screen">
+        <div class="Form_head">Appointment</div>
+        <form id="Registration" class="Form_info" method="post">
+          <!-- <label for="Name">Vendor Name : <br /><br /></label>
+          
+          <input
+            class="Form_input"
+            type="text"
+            name="vendorName"
+            id="vendorName"
+          /><br /><br /> -->
+          <input
+            class="Form_input"
+            type="text"
+            name="fname"
+            id="name"
+            placeholder="Enter First Name"
+          /><br /><br />
+          <label for="Name">Last Name : <br /><br /></label>
+          <input
+            class="Form_input"
+            type="text"
+            name="lname"
+            id="name"
+            placeholder="Enter Last Name"
+          /><br /><br />
+          <label for="Name">Email : <br /><br /></label>
+          <input
+            class="Form_input"
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter Your Valid Email"
+          /><br /><br />
+          <label for="Name">Date: <br /><br /></label>
+          <input
+            class="Form_input"
+            type="date"
+            name="date"
+            id="date"
+          /><br /><br />
+          <label for="Name">Time : <br /><br /></label>
+          <input
+            class="Form_input"
+            type="time"
+            name="time"
+            id="time"
+          /><br /><br />
+          <div class="Form_btn">
+            <button type="submit" value="submit">Submit</button>
+          </div>
+        </form>
+        <div class="Note">
+          Note: On clicking on submit button you will recieve an email
+          <br />containing details of your booking with your vendor
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

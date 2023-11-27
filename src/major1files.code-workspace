@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../../../major1files"
+	},
+	{
+		"path": "../.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "major1"
+  }
+}

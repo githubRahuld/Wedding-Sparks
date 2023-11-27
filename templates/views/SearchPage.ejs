@@ -1,0 +1,120 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Solitreo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Solitreo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Solitreo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nanum+Myeongjo&family=Solitreo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/SearchPage.css" />
+    <title>Wedding Spark - Search</title>
+  </head>
+  <body>
+    <div class="Top_portion">
+      <div class="Logo">
+        <a href="#Home">Wedding Spark</a>
+      </div>
+      <div class="Navbar">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Contact">Contact Us</a></li>
+          <li><a href="./About.html">About Us</a></li>
+          <li><a href="/dashboard">DashBoard</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="Main2" data-aos="fade-right">
+      <div class="MainHeading">
+        Find the vendor who is best fit <br />for your wedding functions
+      </div>
+      <div class="Inside_Main1">
+        Wedding made easy with Wedding - Spark as now you can search vendors
+        with profession<br />
+        or directly search the required function you want to have.
+      </div>
+      <div class="searchBar" data-aos="fade-left">
+        <form action="refresh">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            id="search-item"
+            placeholder="Search the vendors"
+            onkeyup="search()"
+          />
+          <button class="bttn" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="product-list" id="product-list">
+      <div class="Row1">
+        <% if(details!=null) { var i = 1; %> <% details.forEach(function(item){
+        %>
+        <div class="Card">
+          <div class="Card_image">
+            <img class="Img1" src="img/SearchImg2.png" alt="MainImage" />
+          </div>
+
+          <div class="Card_info">
+            Name: <%= item.fname %> <%= item.lname %><br />
+            <div class="catergory">
+              Profession:
+              <div id="prof">
+                <h5><%= item.Profession %></h5>
+              </div>
+            </div>
+
+            <br />
+            Address: <%= item.Address %><br />
+            Booking Fee: <%= item.rate %> per day<br />
+            Ph no:<%= item.contact %><br />
+          </div>
+
+          <div class="Card_Btn">
+            <a class="MYbtn button" href="/Booking">Book an Appointment!</a>
+          </div>
+          <%i++}) %> <% } %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="JS/myScript.js"></script>

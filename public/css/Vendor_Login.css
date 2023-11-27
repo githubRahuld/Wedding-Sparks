@@ -1,0 +1,109 @@
+body{
+    background: rgb(247 244 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+.main_card{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 15px 0px;
+    padding: 15px 19px;
+
+}
+.left_side{
+    padding-right: 10px;
+        margin-left: 25px;
+        margin-top: 100px;
+        width: 300px;
+        border-right: 1px solid black;
+}
+.Left_title{
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Libre Baskerville', serif;
+    padding-bottom: 65px;
+}
+.Login_forms{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+#Email_logo{
+    height: 15px;
+    width: 15px;
+    margin-right: 6px;
+}
+#Pass_logo{
+    margin-right: 5px;
+    margin-left: 2px;
+    height: 17px;
+    width: 17px;
+}
+input{
+    margin-bottom: 5px;
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 0px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+input:focus{
+    border-color: rgb(0 98 209);
+}
+button {
+    /* padding-left: 47px; */
+    margin-left: 58px;
+    font-family: 'Nanum Myeongjo', serif;
+    height: 35px;
+    width: 60%;
+    border: none;
+    background-color: rgb(0 98 209);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-bottom: 5px;
+    color: white;
+}
+button:hover{
+    background: rgb(46, 141, 249);
+}
+a{
+    color: rgb(97 95 238);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(20, 70, 144);
+    cursor: pointer;
+}
+#forget_text{
+    font-family: 'Nanum Myeongjo', serif;
+    margin-left: 30px;
+    margin-top: -18px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+#D_text {
+    margin-top: 10px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    margin-left: 30px;
+}
+#V_text {
+    margin-top: 100px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    margin-left: 85px;
+}
+#logo_logo{
+    width: 500px;
+    height: 500px;
+}

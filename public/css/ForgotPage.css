@@ -1,0 +1,122 @@
+body{
+    background: rgb(247 244 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+.main_card{
+    background: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 2px 2px 15px 0px;
+    border-radius: 2px;
+}
+.Center_Body{
+    padding: 15px 19px;
+}
+a{
+    color: rgb(97 95 238);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(20, 70, 144);
+    cursor: pointer;
+}
+#Forgot_logo{
+    margin-left: 108px;
+    height: 100px;
+    width: 100px;
+}
+.Login_forms{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#Main_1st{
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 5px;
+}
+#Top_Line{
+    font-size: 12px;
+    font-family: 'Libre Baskerville', serif;
+    color: grey;
+    width: 320px;
+    display: flex;
+    margin-bottom: 30px;
+    text-align: center;
+}
+input{
+    margin-bottom: 5px;
+    font-family: 'Nanum Myeongjo', serif;
+    height: 100%;
+    width: 100%;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 2px solid grey;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+button{
+    font-family: 'Nanum Myeongjo', serif;
+    height: 30px;
+    width: 100%;
+    border: none;
+    background-color: rgb(218 84 84);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-bottom: 5px;
+    color: white;
+}
+button:hover{
+    background: rgb(145, 4, 4);
+}
+#forget_text{
+    font-family: 'Nanum Myeongjo', serif;
+    margin-left: 5px;
+    margin-top: -18px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+#Last_text{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#D_text{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+#Back_logo{
+    height: 25px;
+    margin-right: 6px;
+}
+#Back_text{
+    padding-top: 20px;
+    border: 1px solid grey;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    margin-top: 25px;
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+#B_text{
+    padding-top: 3px;
+    margin-right: 5px;
+}

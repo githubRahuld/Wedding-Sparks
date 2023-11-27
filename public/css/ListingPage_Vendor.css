@@ -1,0 +1,87 @@
+body{
+    display: flex;
+    justify-content: center;
+    background: #fff5f5;
+}
+.Float_screen {
+    border: 2px solid black;
+    background-color: rgb(0 98 209);
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+.Form_head::before {
+    content: "";
+    margin-left: 27px;
+    position: absolute;
+    background: rgb(231 217 146);
+    height: 2px;
+    /* width: 90%; */
+    bottom: -4px;
+    width: 22%;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.Form_head{
+    position: relative;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Cabin', sans-serif;
+}
+.Form_info{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 15px;
+    margin: 35px 100px;
+    margin-bottom: 20px;
+}
+input{
+    background: #fff5f5;
+    width: 350px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2px 25px;
+}
+.Gender_info{
+    display: flex;
+}
+#male {
+    padding: 0px 0px;
+    height: 13px;
+    width: 15px;
+    margin-top: 4px;
+}
+#female {
+    padding: 0px 0px;
+    height: 13px;
+    width: 15px;
+    margin-top: 4px;
+}
+.Form_btn{
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+}
+button{
+    position: relative;
+    transition: 0.5s;
+    letter-spacing: 0.1em;
+    color: black;
+    font-family: 'Cabin', sans-serif;
+    width: 90px;
+    border-radius: 10px;
+    margin-left: 11px;
+    padding: 6px;
+    font-size: 15px;
+    background-color: #fff5f5;
+}
+button:hover{
+    cursor: pointer;
+    letter-spacing: 0.25em;
+}
+.Note {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}

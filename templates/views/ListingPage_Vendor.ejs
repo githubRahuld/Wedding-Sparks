@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Spark - Listing</title>
+    <link rel="stylesheet" href="css/ListingPage_Vendor.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/94ceb7c30d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="Float_screen">
+      <div class="Form_head">Fill The Details</div>
+      <form action="/ListingPage_Vendor" class="Form_info" method="post">
+        <h5 id="myRandomId" for="Name" type="h5" name="id"></h5>
+        <label for="Name">First Name : <br /><br /></label>
+        <input
+          class="Form_input"
+          type="text"
+          name="fname"
+          id="name"
+          placeholder="Enter First Name"
+        /><br /><br />
+        <label for="Name">Last Name : <br /><br /></label>
+        <input
+          class="Form_input"
+          type="text"
+          name="lname"
+          id="name"
+          placeholder="Enter Last Name"
+        /><br /><br />
+        <label for="Name">Email : <br /><br /></label>
+        <input
+          class="Form_input"
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter Your Valid Email"
+        /><br /><br />
+        <label for="Name">Profession : <br /><br /></label>
+        <input
+          class="Form_input"
+          type="text"
+          name="Profession"
+          id="Profession"
+          placeholder="Enter Your Profession"
+        /><br /><br />
+        <label for="Name">Address : <br /><br /></label>
+        <input
+          class="Form_input"
+          type="text"
+          name="Address"
+          id="Address"
+          placeholder="Enter Your Shop Address"
+        /><br /><br />
+        <label for="Name">Contact No : <br /><br /></label>
+        <input
+          class="Form_input"
+          type="tel"
+          name="contact"
+          id="contact"
+          placeholder="Enter Your Contact Number"
+        /><br /><br />
+        <label for="Name">Rate : <br /><br /></label>
+        <input
+          class="Form_input"
+          type="text"
+          name="rate"
+          id="rate"
+          placeholder="Enter Your Rate (in per day)"
+        /><br /><br />
+        <div class="Form_btn">
+          <button>Submit</button>
+        </div>
+      </form>
+      <div class="Note">
+        Note: On clicking on submit button you will recieve an email
+        <br />containing your details
+      </div>
+    </div>
+
+    <script>
+      function generateRandomId() {
+        // Generate a random number and convert it to a string
+        const randomNumber = Math.random().toString().substr(2, 8);
+
+        // Combine the random number with a prefix (e.g., 'id_')
+        const randomId = randomNumber;
+
+        return randomId;
+      }
+
+      // Generate a random ID
+      const myRandomId = generateRandomId();
+
+      // Create a div element with the generated ID
+      const divElement = `<div id="myRandomId">ID: ${myRandomId}</div>`;
+
+      // Insert the div element into the document (e.g., into the body)
+      document.getElementById("myRandomId").innerHTML = divElement;
+    </script>
+  </body>
+</html>

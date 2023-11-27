@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Solitreo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Solitreo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Solitreo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/Vendor_Login.css" />
+    <title>Wedding Spark -Vendor's Login</title>
+  </head>
+  <body>
+    <div class="main_card">
+      <div class="left_side">
+        <div class="Left_title">Vendor's Login</div>
+        <form action="/Vendor_Login" method="POST">
+          <div class="Login_forms">
+            <img src="img/User.jpg" alt="Email_img" id="Email_logo" />
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Enter Your Email" />
+          </div>
+          <div class="Login_forms">
+            <img src="img/Password.png" alt="password_img" id="Pass_logo" />
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter Your password"
+            />
+          </div>
+          <div id="forget_text">
+            <a href="./ForgotPass">Forgot password?</a>
+          </div>
+          <button class="button" type="submit">Login</button>
+          <div id="D_text">
+            Don't have an account? <a href="./Vendor_Signup">Signup here</a>
+          </div>
+        </form>
+      </div>
+      <div class="right_side">
+        <div>
+          <img src="img/VendorBG.png" alt="logo_img" id="logo_logo" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
